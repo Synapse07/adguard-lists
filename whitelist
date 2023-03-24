@@ -29,4 +29,5 @@
 @@||self.events.data.microsoft.com^$important
 @@||www-googletagmanager.l.google.com^$important
 @@||prod-data-energon.infra-ext.activision.com^
+||www.googleadservices.com^$important
 ################################################
