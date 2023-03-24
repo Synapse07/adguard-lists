@@ -28,11 +28,5 @@
 @@||t.paypal.com^$important
 @@||self.events.data.microsoft.com^$important
 @@||www-googletagmanager.l.google.com^$important
-@@||time-a.nist.gov^
-@@||time-b.nist.gov^
-@@||time.cloudflare.com^
-@@||time.windows.com^
-@@||time.nist.gov^
-@@||time.cloudflare.com^
 @@||prod-data-energon.infra-ext.activision.com^
 ################################################
