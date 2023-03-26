@@ -1,3 +1,13 @@
+#--------------blacklist---------------
+||www.googleadservices.com^$important
+||www.googleadservices.com^$important
+||primis.tech^$important
+||https://adclick.g.doubleclick.net/^$important
+||https://googleadservices.com/^$important
+||googleads.g.doubleclick.net^$important
+||lh3.googleusercontent.com^$important
+-------------------------------------------------
+
 @@||v20.vortex-win.data.microsoft.com^$important
 @@||onecollector.cloudapp.aria.akadns.net^$important
 @@||fe2.update.microsoft.com.akadns.net^$important
@@ -134,12 +144,4 @@
 @@||xvcf1.xboxlive.com^$important
 @@||xvcf2.xboxlive.com^$important
 @@||d1.xboxlive.com^$important
-#--------------blacklist---------------
-||www.googleadservices.com^$important
-||www.googleadservices.com^$important
-||primis.tech^$important
-||https://adclick.g.doubleclick.net/^$important
-||https://googleadservices.com/^$important
-||googleads.g.doubleclick.net^$important
-||lh3.googleusercontent.com^$important
 ################################################
