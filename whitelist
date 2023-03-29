@@ -27,6 +27,7 @@
 @@||self.events.data.microsoft.com^
 @@||www-googletagmanager.l.google.com^
 @@||prod-data-energon.infra-ext.activision.com^
+# LanCache Servers
 @@||assetcdn.101.arenanetworks.com^
 @@||assetcdn.102.arenanetworks.com^
 @@||assetcdn.103.arenanetworks.com^
@@ -134,6 +135,8 @@
 @@||xvcf1.xboxlive.com^
 @@||xvcf2.xboxlive.com^
 @@||d1.xboxlive.com^
+-----------------------------------------
+
 @@||tracker.torrentbd.net^
 
 
