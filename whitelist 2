@@ -1,11 +1,4 @@
 
-! F1 TV
-@@||f1-prod-production.apigee.net^$important
-@@||f1-prod-production.dn.apigee.net^$important
-@@||formula1.com^$important
-! Joyn TV Stream
-@@||yospace.com^$important
-@@||drive.google.com^$important
 ! For Youtube history
 @@||s.youtube.com^$important
 ! Plex
@@ -41,8 +34,7 @@
 @@||s88570519.t.en25.com^$important
 @@||p04e.t.en25.com^$important
 @@||t.en25.com^$important
-! Slack
-@@||slackb.com^$important
+
 ! Cloudflare
 @@||cdn.cloudflare.net^$important
 @@||cdnjs.cloudflare.com^$important
@@ -128,14 +120,8 @@
 @@||cdn.vidible.tv^$important
 @@||delivery.vidible.tv^$important
 @@||videos.vidible.tv^$important
-! ImgIX
-@@||imgix.net^$important
-! XKCD
-@@||imgs.xkcd.com^$important
-! Bitly URL Shortener
-@@||j.mp^$important
-! Jquery
-@@||jquery.com^$important
+
+
 ! Jsdelivr.net Open Source CDN
 @@||jsdelivr.net^$important
 ! Malwarebytes Anti-Malware
@@ -155,10 +141,7 @@
 @@||secure.avangate.com^$important
 ! Surveymonkey
 @@||secure.surveymonkey.com^$important
-! JW Player
-@@||ssl.p.jwpcdn.com^$important
-! Tawk Live Chat
-@@||tawk.to^$important
+
 ! Themoviedb.com
 @@||themoviedb.com^$important
 ! Thetvdb.com
@@ -237,39 +220,7 @@
 @@||ichnaea.netflix.com^$important
 @@||appboot.netflix.com^$important
 @@||secure.netflix.com^$important
-! Samsung TV network issue
-@@||cdn.samsungcloudsolution.com^$important
-! Spotify
-@@||open.spotify.com^$important
-@@||mobile-ap.spotify.com^$important
-@@||apresolve.spotify.com^$important
-@@||upgrade.scdn.com^$important
-@@||market.spotify.com^$important
-@@||spclient.wg.spotify.com^$important
-@@||ap.spotify.com^$important
-@@||audio-ake.spotify.com.edgesuite.net^$important
-@@||audio4-ak.spotify.com.edgesuite.net^$important
-! Amazon Prime Video and Amazon CDN
-@@||eu.api.amazonvideo.com^$important
-@@||device-metrics-us.amazon.com^$important
-@@||fls-eu.amazon.com^$important
-@@||fls-na.amazon.com^$important
-@@||cloudfront.net^$important
-@@||device-metrics-us-2.amazon.com^$important
-@@||images-amazon.com^$important
-@@||amazonaws.com^$important
-! Apple
-@@||gdmf.apple.com.akadns.net^$important
-@@||apple.com^$important
-@@||itunes.com^$important
-@@||mzstatic.com^$important
-@@||iphone-ld.origin-apple.com.akadns.net^$important
-@@||ax.phobos.apple.com.edgesuite.net^$important
-@@||init-p01md-lb.push-apple.com.akadns.net^$important
-@@||uts-api-cdn.itunes-apple.com.akadns.net^$important
-@@||np-edge-cdn.itunes-apple.com.akadns.net^$important
-@@||iadsdk.apple.com.akadns.net^$important
-@@||play.itunes.apple.com.edgesuite.net^$important
+
 ! Pi-hole commonly whitelisted domains: https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212/15
 @@||h-sdk.online-metrix.net^$important
 @@||cdn.cpnscdn.com^$important
@@ -334,52 +285,8 @@
 @@||email-link.adtidy.org^$important
 ! Haveibeenpwned
 @@||haveibeenpwned.com^$important
-! Others
-@@||cdnp2.stackassets.com^$important
-@@||snap.licdn.com^$important
-@@||sessions.bugsnag.com^$important
-@@||http2.mlstatic.com^$important
-@@||lightboxapi.azurewebsites.net^$important
-@@||seal-sanjose.bbb.org^$important
-@@||redditstatic.com^$important
-@@||bat.bing.com^$important
-@@||dashboard.thankful.ai^$important
-@@||cdn.polyfill.io^$important
-@@||js.iugu.com^$important
-@@||aliexpress.com^$important
-@@||s.click.aliexpress.com^$important
-@@||answers.microsoft.com^$important
-@@||marktplaats.nl^$important
-@@||storage.googleapis.com^$important
-@@||lithium.com^$important
-@@||jdownloader.org^$important
-@@||pastebin.com^$important
-@@||paste.ee^$important
-@@||tenforums.com^$important
-@@||eightforums.com^$important
-@@||jwplatform.com^$important
-@@||ooyala.com^$important
-@@||keystone.mwbsys.com^$important
-@@||cedexis.net^$important
-@@||omni.com.br^$important
-@@||ias.biz.com.br^$important
-@@||netshoes.com.br^$important
-@@||majorgeeks.com^$important
-@@||greatis.com^$important
-@@||dl.gl-inet.com^$important
-@@||firewalla.com^$important
-@@||gl-inet.com^$important
-! https://www.reddit.com/r/pihole/comments/74it6h/help_identifying_embedded_video_url_being_blocked/
-@@||d2c8v52ll5s99u.cloudfront.net^$important
-! https://wally3k.github.io/ (bottom of the page)
-@@||rover.ebay.com^$important
-@@||s3.amazonaws.com^$important
-@@||dns.msftncsi.com^$important
-@@||res.cloudinary.com^$important
-@@||imgs.xkcd.com^$important
-! Symantect Records user logins to management console
-@@||oms.symantec.com^$important
-@@||om.symantec.com^$important
+
+
 ! Cannot login to epic launcher when blocked
 @@||tracking.epicgames.com^$important
 ! Riot League of Lengends launch
@@ -403,22 +310,10 @@
 ! https://github.com/notracking/hosts-blocklists/pull/33
 @@||redirector.gvt1.com^$important
 @@||gvt1.com^$important
-! https://github.com/StevenBlack/hosts/issues/419
-@@||s0.2mdn.net^$important
-@@||2mdn.net^$important
-! https://github.com/StevenBlack/hosts/issues/415
-@@||teslathemes.com^$important
-@@||piwik.org^$important
+
 ! https://github.com/StevenBlack/hosts/issues/403
 @@||1drv.ms^$important
-! https://github.com/StevenBlack/hosts/issues/328
-@@||vc.ru^$important
-! https://github.com/StevenBlack/hosts/issues/276
-@@||ok.ru^$important
-! https://github.com/notracking/hosts-blocklists/issues/29
-@@||bet365.com^$important
-! https://github.com/notracking/hosts-blocklists/issues/31
-@@||kiev.ua^$important
+
 ! Samsung TV's Amazon Prime Video app
 @@||samsungcloudsolution.com^$important
 @@||time.samsungcloudsolution.com^$important
@@ -440,28 +335,7 @@
 @@||netlify.com^$important
 ! https://github.com/notracking/hosts-blocklists/issues/39
 @@||phonearena.com^$important
-! https://github.com/notracking/hosts-blocklists/issues/44
-@@||dansguardian.org^$important
-! https://github.com/notracking/hosts-blocklists/issues/43
-@@||schibsted.io^$important
-! For displaying graphs on degiro.nl
-@@||vwdservices.com^$important
-! https://github.com/notracking/hosts-blocklists/issues/49
-@@||.0.com^$important
-! https://forum.adguard.com/index.php?threads/href-li.27021/
-@@||href.li^$important
-! invalid address (crashes some unix system)
-! https://github.com/notracking/hosts-blocklists/issues/52
-@@||streamillimit�.com^$important
-! https://github.com/notracking/hosts-blocklists/issues/56
-@@||apresolve.spotify.com^$important
-@@||experts-exchange.com^$important
-! https://github.com/pi-hole/pi-hole/issues/1980
-@@||mbnet.fi^$important
-! https://github.com/notracking/hosts-blocklists/issues/65
-@@||euronews.com^$important
-! https://github.com/notracking/hosts-blocklists/issues/67
-@@||ssl.p.jwpcdn.com^$important
+
 ! https://github.com/notracking/hosts-blocklists/issues/68
 @@||sentry.io^$important
 ! https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
