@@ -115,11 +115,6 @@
 @@||hls.ted.com^$important
 @@||app-api.ted.com^$important
 @@||tedcdn.com^$important
-! Vidible Video Platform
-@@||img.vidible.tv^$important
-@@||cdn.vidible.tv^$important
-@@||delivery.vidible.tv^$important
-@@||videos.vidible.tv^$important
 
 
 ! Jsdelivr.net Open Source CDN
@@ -336,35 +331,11 @@
 ! https://github.com/notracking/hosts-blocklists/issues/39
 @@||phonearena.com^$important
 
-! https://github.com/notracking/hosts-blocklists/issues/68
-@@||sentry.io^$important
-! https://discourse.pi-hole.net/t/commonly-whitelisted-domains/212
-@@||s.marketwatch.com^$important
-! https://github.com/notracking/hosts-blocklists/issues/69
-@@||webmd.com^$important
-! https://github.com/notracking/hosts-blocklists/issues/72
-! https://github.com/notracking/hosts-blocklists/issues/104
-@@||kijiji.ca^$important
-@@||kijiji.com^$important
-@@||mingle.kijiji.ca^$important
-! https://github.com/notracking/hosts-blocklists/issues/73
-@@||markitcdn.com^$important
+
 ! Should just not be blocked
 @@||users.telenet.be^$important
-! https://github.com/StevenBlack/hosts/issues/609
-@@||rebelmouse.com^$important
 ! https://github.com/notracking/hosts-blocklists/issues/75
 @@||image.ibb.co^$important
-! https://github.com/notracking/hosts-blocklists/issues/76
-@@||wistia.com^$important
-! https://github.com/notracking/hosts-blocklists/issues/77
-@@||i-technet.sec.s-msft.com^$important
-! https://github.com/notracking/hosts-blocklists/issues/78
-@@||solvemedia.com^$important
-! https://github.com/notracking/hosts-blocklists/issues/81
-@@||cfvod.kaltura.com^$important
-! https://github.com/notracking/hosts-blocklists/issues/82
-@@||highcharts.com^$important
 ! https://github.com/notracking/hosts-blocklists/issues/90
 @@||unity3d.com^$important
 ! https://github.com/notracking/hosts-blocklists/issues/91
