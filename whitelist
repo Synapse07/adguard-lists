@@ -329,7 +329,6 @@
 @@||dl-wowp-se.wargaming.net^
 @@||dl-wowp-cdx.wargaming.net^
 @@||wgus-woteu.wargaming.net^
-@@||dl.delivery.mp.microsoft.com^
 @@||amupdatedl.microsoft.com^
 @@||amupdatedl2.microsoft.com^
 @@||amupdatedl3.microsoft.com^
@@ -343,17 +342,13 @@
 @@||xvcf2.xboxlive.com^
 @@||d1.xboxlive.com^
 -----------------------------------------
-
 @@||tracker.torrentbd.net^
-
-
 # Adult Swim Videos on Amazon Firestick
 @@||pmd.cdn.turner.com^
 @@||i.cdn.turner.com^
 @@||s.cdn.turner.com^
 @@||z.cdn.turner.com^
 @@||amd.cdn.turner.com^
-
 @@||device-metrics-us-2.amazon.com^
 @@||device-metrics-us.amazon.com^
 @@||cognito-identity.us-east-1.amazonaws.com^
@@ -407,10 +402,8 @@
 @@||mqtt-mini.facebook.com^
 @@||pixel.nymag.com^
 @@||events.gfe.nvidia.com^
-@@||gfwsl.geforce.com^
 @@||prod.telemetry.ros.rockstargames.com^
 @@||hosts-file.net^
-@@||raw.githubusercontent.com^
 @@||v.firebog.net^
 @@||hostsfile.org^
 @@||someonewhocares.org^
@@ -439,11 +432,9 @@
 @@||api.pluto.tv^
 @@||players.pluto.tv^
 @@||dcs-vod.apis.anvato.net^
-@@||z.cdn.turner.com^
 @@||manifest.auditude.com^
 @@||cwtv-mrss-akamai.cwtv.com^
 @@||cwtv-prod-elb.digitalsmiths.net^
-@@||redirector.googlevideo.com^
 @@||time.samsungcloudsolution.com^
 @@||cdn.samsungcloudsolution.com^
 @@||www.sbs.com.au^
@@ -470,7 +461,6 @@
 @@||amzn.com^
 @@||fpdownload.adobe.com^
 @@||entitlement.auth.adobe.com^
-@@||livepassdl.conviva.com^
 @@||v10.events.data.microsoft.com^
 @@||v20.events.data.microsoft.com^
 @@||stats.streamelements.com^
