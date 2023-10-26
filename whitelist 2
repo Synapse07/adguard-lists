@@ -24,18 +24,6 @@
 @@||geo3.ggpht.com^$important
 @@||yt3.ggpht.com^$important
 @@||drive.google.com^$important
-! CNAME googletagmanager.com
-@@||www-googletagmanager.l.google.com^$important
-@@||googletagmanager.com^$important
-! Youtube
-@@||youtube.com^$important
-@@||youtubekids.com^$important
-@@||s2.youtube.com^$important
-@@||youtu.be^$important
-@@||youtube-nocookie.com^$important
-@@||i.ytimg.com^$important
-@@||i1.ytimg.com^$important
-@@||s.ytimg.com^$important
 ! For Youtube history
 @@||s.youtube.com^$important
 ! Github
@@ -126,8 +114,6 @@
 ! Wordpress
 @@||wp.com^$important
 @@||wordpress.com^$important
-! Avangate Shop
-@@||secure.avangate.com^$important
 ! Surveymonkey
 @@||secure.surveymonkey.com^$important
 ! Themoviedb.com
