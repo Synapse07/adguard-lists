@@ -1,0 +1,730 @@
+http:
+  pprof:
+    port: 6060
+    enabled: false
+  doh:
+    routes:
+      - GET /dns-query
+      - POST /dns-query
+      - GET /dns-query/{ClientID}
+      - POST /dns-query/{ClientID}
+    insecure_enabled: false
+  address: 0.0.0.0:3000
+  session_ttl: 30d
+users:
+  - name: admin
+    password: $2a$10$YpljgWOQGu9jtcuv4LYVk.AVb3nxeehreVUceoGmkGS5ho1blXS8S
+auth_attempts: 5
+block_auth_min: 15
+http_proxy: ""
+language: ""
+theme: auto
+dns:
+  bind_hosts:
+    - 127.0.0.1
+    - ::1
+    - 10.1.1.1
+    - fdc7:4861:70e9::1
+  port: 53
+  anonymize_client_ip: false
+  ratelimit: 0
+  ratelimit_subnet_len_ipv4: 24
+  ratelimit_subnet_len_ipv6: 56
+  ratelimit_whitelist: []
+  refuse_any: true
+  upstream_dns:
+    - 1.1.1.1
+    - 1.0.0.1
+    - 103.43.148.148
+    - 27.54.148.2
+    - 10.160.217.130
+    - '##DHCP'
+    - '[/lan/]127.0.0.1:54'
+    - '[//]127.0.0.1:54'
+    - '[/pool.ntp.org/]1.1.1.1'
+    - '[/pool.ntp.org/]1.0.0.1'
+    - '[/pool.ntp.org/]8.8.8.8'
+    - '[/pool.ntp.org/]8.8.4.4'
+    - '[/cpdbox.com/]1.0.0.1 1.1.1.1'
+    - '[/run.app/]1.0.0.1 1.1.1.1'
+    - '[/alibabadns.com/]1.0.0.1 1.1.1.1'
+    - '[/aliexpress-media.com/]1.0.0.1 1.1.1.1'
+    - '[/alibaba-inc.com/]1.0.0.1 1.1.1.1'
+    - '[/pinimg.com/]1.0.0.1 1.1.1.1'
+    - '[/pinterest.com/]1.0.0.1 1.1.1.1'
+    - '[/akamaiedge.net/]1.0.0.1 1.1.1.1'
+    - '[/alicdn.com/]1.0.0.1 1.1.1.1'
+    - '[/akamai.net/]1.0.0.1 1.1.1.1'
+    - '[/supercell.com/]1.0.0.1 1.1.1.1'
+    - '[/seeurlpcl.com/]1.0.0.1 1.1.1.1'
+    - '[/supercellid.com/]1.0.0.1 1.1.1.1'
+    - '[/supercellstore.com/]1.0.0.1 1.1.1.1'
+    - '[/supercellgames.com/]1.0.0.1 1.1.1.1'
+    - '[/supercellcreators.com/]1.0.0.1 1.1.1.1'
+    - '[/creators.supercell.com/]1.0.0.1 1.1.1.1'
+    - '[/support.supercell.com/]1.0.0.1 1.1.1.1'
+    - '[/esports.supercell.com/]1.0.0.1 1.1.1.1'
+    - '[/make.supercell.com/]1.0.0.1 1.1.1.1'
+    - '[/accounts.supercell.com/]1.0.0.1 1.1.1.1'
+    - '[/store.supercell.com/]1.0.0.1 1.1.1.1'
+    - '[/id.supercell.com/]1.0.0.1 1.1.1.1'
+    - '[/gamesfirsthelsinki.com/]1.0.0.1 1.1.1.1'
+    - '[/clashroyale.com/]1.0.0.1 1.1.1.1'
+    - '[/brawlstars.com/]1.0.0.1 1.1.1.1'
+    - '[/clash.com/]1.0.0.1 1.1.1.1'
+    - '[/clashofclans.com/]1.0.0.1 1.1.1.1'
+    - '[/boombeach.com/]1.0.0.1 1.1.1.1'
+    - '[/hayday.com/]1.0.0.1 1.1.1.1'
+    - '[/haydaygame.com/]1.0.0.1 1.1.1.1'
+    - '[/clashmini.com/]1.0.0.1 1.1.1.1'
+    - '[/squadbusters.com/]1.0.0.1 1.1.1.1'
+    - '[/mo.co/]1.0.0.1 1.1.1.1'
+    - '#============================================================'
+    - '# STEAM'
+    - '# ============================================================'
+    - '[/steamcontent.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '[/steampowered.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# EPIC GAMES'
+    - '# ============================================================'
+    - '[/epicgames.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '[/unrealengine.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# BLIZZARD / BATTLE.NET'
+    - '# ============================================================'
+    - '[/blizzard.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '[/battle.net/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# UBISOFT'
+    - '# ============================================================'
+    - '[/ubi.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# ELECTRONIC ARTS (EA / ORIGIN)'
+    - '# ============================================================'
+    - '[/ea.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '[/akamaihd.net/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# XBOX / MICROSOFT'
+    - '# ============================================================'
+    - '[/xboxlive.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '[/microsoft.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# PLAYSTATION / SONY'
+    - '# ============================================================'
+    - '[/playstation.net/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '[/sony.akadns.net/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# WARFRAME'
+    - '# ============================================================'
+    - '[/warframe.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# ROCKSTAR GAMES'
+    - '# ============================================================'
+    - '[/rockstargames.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# WARGAMING'
+    - '# ============================================================'
+    - '[/wargaming.net/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '[/gcdn.co/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# RIOT GAMES'
+    - '# ============================================================'
+    - '[/riotgames.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '[/l3cdn.riotgames.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# NINTENDO'
+    - '# ============================================================'
+    - '[/nintendo.net/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '[/nintendo.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# ARENANET (GUILD WARS 2)'
+    - '# ============================================================'
+    - '[/arenanetworks.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# ELDER SCROLLS ONLINE'
+    - '# ============================================================'
+    - '[/elderscrollsonline.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# NEXUS MODS'
+    - '# ============================================================'
+    - '[/nexusmods.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# ESCAPE FROM TARKOV'
+    - '# ============================================================'
+    - '[/eft-store.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# DAYBREAK GAMES'
+    - '# ============================================================'
+    - '[/daybreakgames.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# CITY OF HEROES'
+    - '# ============================================================'
+    - '[/homecomingservers.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# FRONTIER (ELITE DANGEROUS)'
+    - '# ============================================================'
+    - '[/zaonce.net/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# RENEGADE X'
+    - '# ============================================================'
+    - '[/ren-x.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '[/ctgamehosts.uk/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# YOUTUBE'
+    - '# ============================================================'
+    - '[/googlevideo.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '[/ytimg.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '# ============================================================'
+    - '# GOOGLE PLAY / ANDROID'
+    - '# ============================================================'
+    - '[/gvt1.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '[/gvt2.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '[/gvt3.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '[/ggpht.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '[/google.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+    - '[/youtube.com/]103.43.148.148 27.54.148.2 10.160.217.130'
+  upstream_dns_file: ""
+  bootstrap_dns:
+    - 1.1.1.1
+  fallback_dns:
+    - 1.1.1.1
+    - 1.0.0.1
+  upstream_mode: parallel
+  fastest_timeout: 1s
+  allowed_clients: []
+  disallowed_clients: []
+  blocked_hosts:
+    - version.bind
+    - id.server
+    - hostname.bind
+  trusted_proxies:
+    - 127.0.0.0/8
+    - ::1/128
+  cache_enabled: true
+  cache_size: 10000
+  cache_ttl_min: 0
+  cache_ttl_max: 0
+  cache_optimistic: true
+  cache_optimistic_answer_ttl: 30s
+  cache_optimistic_max_age: 12h
+  bogus_nxdomain: []
+  aaaa_disabled: false
+  enable_dnssec: false
+  edns_client_subnet:
+    custom_ip: ""
+    enabled: false
+    use_custom: false
+  max_goroutines: 300
+  handle_ddr: true
+  ipset: []
+  ipset_file: ""
+  bootstrap_prefer_ipv6: false
+  upstream_timeout: 10s
+  private_networks: []
+  use_private_ptr_resolvers: true
+  local_ptr_upstreams:
+    - 127.0.0.1:54
+  use_dns64: false
+  dns64_prefixes: []
+  serve_http3: false
+  use_http3_upstreams: false
+  serve_plain_dns: true
+  hostsfile_enabled: true
+  pending_requests:
+    enabled: true
+tls:
+  enabled: false
+  server_name: ""
+  force_https: false
+  port_https: 443
+  port_dns_over_tls: 853
+  port_dns_over_quic: 853
+  port_dnscrypt: 0
+  dnscrypt_config_file: ""
+  certificate_chain: ""
+  private_key: ""
+  certificate_path: ""
+  private_key_path: ""
+  strict_sni_check: false
+querylog:
+  dir_path: ""
+  ignored:
+    - version.bind
+    - id.server
+    - hostname.bind
+    - .arpa
+    - wpad.lan
+    - arpa
+    - in-addr.arpa
+    - ip6.arpa
+    - ipv4only.arpa
+  interval: 2h
+  size_memory: 1000
+  enabled: true
+  ignored_enabled: true
+  file_enabled: true
+statistics:
+  dir_path: ""
+  ignored:
+    - version.bind
+    - id.server
+    - hostname.bind
+    - .arpa
+    - wpad.lan
+    - arpa
+    - in-addr.arpa
+    - ip6.arpa
+    - ipv4only.arpa
+  interval: 1d
+  enabled: true
+  ignored_enabled: true
+filters:
+  - enabled: true
+    url: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt
+    name: Threat intelligence
+    id: 1758047206
+  - enabled: true
+    url: https://big.oisd.nl
+    name: OISD Blocklist Big
+    id: 1758047211
+  - enabled: true
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt
+    name: Phishing URL Blocklist (PhishTank and OpenPhish)
+    id: 1759363895
+  - enabled: true
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt
+    name: AdGuard DNS Popup Hosts filter
+    id: 1774813400
+  - enabled: true
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_67.txt
+    name: HaGeZi's Apple Tracker Blocklist
+    id: 1774813401
+  - enabled: true
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_66.txt
+    name: HaGeZi's OPPO & Realme Tracker Blocklist
+    id: 1774813402
+  - enabled: true
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_61.txt
+    name: HaGeZi's Samsung Tracker Blocklist
+    id: 1774813403
+  - enabled: true
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_65.txt
+    name: HaGeZi's Vivo Tracker Blocklist
+    id: 1774813404
+  - enabled: true
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_60.txt
+    name: HaGeZi's Xiaomi Tracker Blocklist
+    id: 1774813405
+  - enabled: true
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt
+    name: Perflyst and Dandelion Sprout's Smart-TV Blocklist
+    id: 1774813406
+  - enabled: true
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_12.txt
+    name: Dandelion Sprout's Anti-Malware List
+    id: 1774813407
+  - enabled: true
+    url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt
+    name: uBlockâ‚€ filters â€“ Badware risks
+    id: 1774813408
+whitelist_filters:
+  - enabled: true
+    url: https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/windows.txt
+    name: Adguard Windows
+    id: 1758047212
+  - enabled: true
+    url: https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/firefox.txt
+    name: Adguard firefox
+    id: 1758047213
+  - enabled: true
+    url: https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/sensitive.txt
+    name: Adguard Sensitive
+    id: 1758047214
+  - enabled: true
+    url: https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/android.txt
+    name: Adguard android
+    id: 1758047215
+user_rules:
+  - '@@||aliapp.org^'
+  - '@@||aliapp.org^'
+  - '@@||daraz.com.bd^'
+  - '# ============================================================'
+  - '# STEAM'
+  - '# ============================================================'
+  - '||steamcontent.com^$dnstype=AAAA'
+  - '||steampowered.com^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# EPIC GAMES'
+  - '# ============================================================'
+  - '||epicgames.com^$dnstype=AAAA'
+  - '||unrealengine.com^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# BLIZZARD / BATTLE.NET'
+  - '# ============================================================'
+  - '||blizzard.com^$dnstype=AAAA'
+  - '||battle.net^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# UBISOFT'
+  - '# ============================================================'
+  - '||ubi.com^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# ELECTRONIC ARTS (EA / ORIGIN)'
+  - '# ============================================================'
+  - '||ea.com^$dnstype=AAAA'
+  - '||akamaihd.net^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# XBOX / MICROSOFT'
+  - '# ============================================================'
+  - '||xboxlive.com^$dnstype=AAAA'
+  - '||microsoft.com^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# PLAYSTATION / SONY'
+  - '# ============================================================'
+  - '||playstation.net^$dnstype=AAAA'
+  - '||sony.akadns.net^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# WARFRAME'
+  - '# ============================================================'
+  - '||warframe.com^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# ROCKSTAR GAMES'
+  - '# ============================================================'
+  - '||rockstargames.com^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# WARGAMING'
+  - '# ============================================================'
+  - '||wargaming.net^$dnstype=AAAA'
+  - '||gcdn.co^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# RIOT GAMES'
+  - '# ============================================================'
+  - '||riotgames.com^$dnstype=AAAA'
+  - '||l3cdn.riotgames.com^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# NINTENDO'
+  - '# ============================================================'
+  - '||nintendo.net^$dnstype=AAAA'
+  - '||nintendo.com^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# ARENANET (GUILD WARS 2)'
+  - '# ============================================================'
+  - '||arenanetworks.com^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# ELDER SCROLLS ONLINE'
+  - '# ============================================================'
+  - '||elderscrollsonline.com^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# NEXUS MODS'
+  - '# ============================================================'
+  - '||nexusmods.com^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# ESCAPE FROM TARKOV'
+  - '# ============================================================'
+  - '||eft-store.com^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# DAYBREAK GAMES'
+  - '# ============================================================'
+  - '||daybreakgames.com^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# CITY OF HEROES'
+  - '# ============================================================'
+  - '||homecomingservers.com^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# FRONTIER (ELITE DANGEROUS)'
+  - '# ============================================================'
+  - '||zaonce.net^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# RENEGADE X'
+  - '# ============================================================'
+  - '||ren-x.com^$dnstype=AAAA'
+  - '||ctgamehosts.uk^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# Microsoft / Xbox'
+  - '# ============================================================'
+  - '||microsoft.com^$dnstype=AAAA'
+  - '||xboxlive.com^$dnstype=AAAA'
+  - '# ============================================================'
+  - '# Akamai-backed game downloads'
+  - '# ============================================================'
+  - '||akamaihd.net^$dnstype=AAAA'
+  - '@@||www.webplayer.online^$important'
+  - ""
+dhcp:
+  enabled: false
+  interface_name: ""
+  local_domain_name: lan
+  dhcpv4:
+    gateway_ip: ""
+    subnet_mask: ""
+    range_start: ""
+    range_end: ""
+    lease_duration: 86400
+    icmp_timeout_msec: 1000
+    options: []
+  dhcpv6:
+    range_start: ""
+    lease_duration: 86400
+    ra_slaac_only: false
+    ra_allow_slaac: false
+filtering:
+  blocking_ipv4: ""
+  blocking_ipv6: ""
+  blocked_services:
+    schedule:
+      time_zone: UTC
+    ids: []
+  protection_disabled_until: null
+  safe_search:
+    enabled: false
+    bing: false
+    duckduckgo: false
+    ecosia: false
+    google: false
+    pixabay: false
+    yandex: false
+    youtube: false
+  blocking_mode: default
+  parental_block_host: family-block.dns.adguard.com
+  safebrowsing_block_host: standard-block.dns.adguard.com
+  rewrites: []
+  safe_fs_patterns:
+    - /opt/AdGuardHome/userfilters/*
+  safebrowsing_cache_size: 1048576
+  safesearch_cache_size: 1048576
+  parental_cache_size: 1048576
+  cache_time: 30
+  filters_update_interval: 12
+  blocked_response_ttl: 10
+  filtering_enabled: true
+  rewrites_enabled: true
+  parental_enabled: false
+  safebrowsing_enabled: false
+  protection_enabled: true
+clients:
+  runtime_sources:
+    whois: true
+    arp: true
+    rdns: true
+    dhcp: true
+    hosts: true
+  persistent:
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Alexa
+      ids:
+        - b4:b7:42:b2:1a:a6
+      tags: []
+      upstreams: []
+      uid: 019b304c-b613-780d-9591-3224a93ae067
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: BruhPC
+      ids:
+        - d8:43:ae:a6:62:a5
+      tags:
+        - device_pc
+      upstreams: []
+      uid: 019b304c-43e9-7928-a519-e191e4294972
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: HX21
+      ids:
+        - 90:6a:94:12:a6:29
+      tags: []
+      upstreams: []
+      uid: 019b304d-2dea-7696-b469-0bbb340e786a
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: RPI4B
+      ids:
+        - 10.1.1.1
+        - 127.0.0.1
+        - ::1
+      tags: []
+      upstreams: []
+      uid: 0199828a-2148-7a54-a1bd-cddb25b5407b
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Smart-Fan
+      ids:
+        - 1c:90:ff:ed:2a:07
+      tags: []
+      upstreams:
+        - 8.8.8.8
+        - 172.16.172.10
+      uid: 019be079-5881-7e1f-a576-924bbe9578d8
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Smart-IR
+      ids:
+        - f8:17:2d:5b:a1:c4
+      tags: []
+      upstreams:
+        - 8.8.8.8
+        - 208.67.222.2
+        - 208.67.220.2
+      uid: 019b304d-0b44-75ab-968b-c05ca9a2b24b
+      upstreams_cache_size: 2000000
+      upstreams_cache_enabled: false
+      use_global_settings: false
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Smart-Switchboard
+      ids:
+        - 80:64:7c:f0:81:41
+      tags: []
+      upstreams:
+        - 8.8.8.8
+        - 172.16.172.10
+      uid: 019b304c-e305-721b-93cd-f5babd8199c7
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+log:
+  enabled: true
+  file: ""
+  max_backups: 0
+  max_size: 100
+  max_age: 3
+  compress: false
+  local_time: false
+  verbose: false
+os:
+  group: ""
+  user: ""
+  rlimit_nofile: 0
+schema_version: 34
